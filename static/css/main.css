@@ -26,7 +26,7 @@ ul{
     height: 41px;
 }
 
-  #bgVideo {
+  /* #bgVideo {
     position: fixed; 
     right: 0; 
     bottom: 0;
@@ -36,5 +36,16 @@ ul{
     height: auto; 
     z-index: -100;
     background-size: cover;
-  }
+    background-repeat: no-repeat;
+  } */
+  #bgVideo {
+    position: fixed;
+    top: 0; /* Set to top instead of bottom */
+    left: 0; /* Set to left instead of right */
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    object-fit: cover; /* Use object-fit instead of background-size */
+}
+
   

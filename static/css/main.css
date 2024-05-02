@@ -1,0 +1,40 @@
+body{
+    background-color:transparent;
+    margin: 20px;
+}
+#profile-wrapper{
+    text-align: center;
+}
+#profile-pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul{
+    padding: 0;
+    list-style-type: none;
+}
+.social-links ul,li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 9px;
+}
+.social{
+    width: 57px;
+    height: 41px;
+}
+
+  #bgVideo {
+    position: fixed; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -100;
+    background-size: cover;
+  }
+  

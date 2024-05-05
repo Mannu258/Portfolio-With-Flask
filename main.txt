@@ -1,0 +1,13 @@
+
+• Django 
+•  
+• 
+ •
+  •Full-Stack Development •
+    • HTML5 
+    • Cascading Style Sheets (CSS)
+     • JavaScript 
+     • Bootstrap (Framework)
+      • MySQL
+       • Sqlite
+        • 

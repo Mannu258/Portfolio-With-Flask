@@ -1,3 +1,904 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext"
+		rel="stylesheet">
+	<title>portfolio</title>
+	<link rel="shortcut icon" type="image/icon" href="{{ url_for('static', filename='assets/logo/favicon.png') }}" />
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/flaticon.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/animate.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/owl.carousel.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/owl.theme.default.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/bootsnav.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/responsive.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	<header class="top-area">
+		<div class="header-area">
+			<nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+							<i class="fa fa-bars"></i>
+						</button>
+						<a class="navbar-brand" href="/">Mandeep</a>
+					</div>
+					<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+							<li class=" smooth-menu active"></li>
+							<li class=" smooth-menu"><a href="#education">education</a></li>
+							<li class="smooth-menu"><a href="#skills">skills</a></li>
+							<!-- <li class="smooth-menu"><a href="#experience">experience</a></li> -->
+							<li class="smooth-menu"><a href="#profiles">profile</a></li>
+							<li class="smooth-menu"><a href="#portfolio">portfolio</a></li>
+							<li class="smooth-menu"><a href="#clients">clients</a></li>
+							<li class="smooth-menu"><a href="#contact">contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="clearfix"></div>
+	</header>
+	<section id="welcome-hero" class="welcome-hero">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="header-text">
+						<h2>hi <span>,</span> i am <br> Mandeep <br> Mishra <span>.</span> </h2>
+						<p>Web developer</p>
+						<a href="{{ url_for('static', filename='assets/download/MANDEEP_CV.pdf') }}" download>download resume</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<section id="about" class="about">
+		<div class="section-heading text-center">
+			<h2>about me</h2>
+		</div>
+		<div class="container">
+			<div class="about-content">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="single-about-txt">
+							<h3>
+								I'm a Python and Django Developer with a hunger or building powerful web experiences.
+								Currently, I am pursuing my passion in building an ecommerce application using Django
+								Let's create something amazing together!
+							</h3>
+							<p>
+								it’s the work that happens behind the scenes to make a website look great, work fast,
+								and perform well with a seamless user experience. Web Developers, or ‘devs’, do this by
+								using a variety of coding languages. The languages they use depend on the types of tasks
+								they are performing and the platforms on which they are working.
+								Front-End Development: Involves creating the visual aspects of a website that users see
+								and interact with through web browsers. Back-End Development: Focuses on server-side
+								development with databases and website architecture. Full-Stack Development: Combines
+								both front-end and back-end development expertise.
+							</p>
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="single-about-add-info">
+										<h3>phone</h3>
+										<p>9386090900</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="single-about-add-info">
+										<h3>email</h3>
+										<p>mishramandeep@outlook.com</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-offset-1 col-sm-5">
+						<div class="single-about-img">
+							<img src="{{ url_for('static', filename='assets/images/about/profile_image.jpg') }}">
+							<div class="about-list-icon">
+								<ul>
+
+									<li>
+										<a href="https://github.com/Mannu258" target="_blank">
+											<i class="fa fa-github" aria-hidden="true"></i>
+										</a>
+
+									</li>
+									<li>
+										<a href="https://twitter.com/Mannu_258 " target="_blank">
+											<i class="fa fa-twitter" aria-hidden="true"></i>
+										</a>
+
+									</li>
+									<li>
+										<a href="https://www.linkedin.com/in/mandeep-mishra-843378223/" target="_blank"">
+											<i class="fa fa-linkedin" aria-hidden="true"></i>
+										</a>
+									</li>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="education" class="education">
+		<div class="section-heading text-center">
+			<h2>education</h2>
+		</div>
+		<div class="container">
+			<div class="education-horizontal-timeline">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="single-horizontal-timeline">
+							<div class="experience-time">
+								<h2>2018 - 2022</h2>
+								<h3>Bechlor <span>of </span> computer application</h3>
+							</div>
+							<div class="timeline-horizontal-border">
+								<i class="fa fa-circle" aria-hidden="true"></i>
+								<span class="single-timeline-horizontal"></span>
+							</div>
+							<div class="timeline">
+								<div class="timeline-content">
+									<h4 class="title">
+										Bhupendra Narayan Mandal University
+									</h4>
+									<h5></h5>
+
+									<p class="description">
+										Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu
+										fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="single-horizontal-timeline">
+							<div class="experience-time">
+								<h2>2016 - 2018</h2>
+								<h3>Intermediate</h3>
+							</div>
+							<div class="timeline-horizontal-border">
+								<i class="fa fa-circle" aria-hidden="true"></i>
+								<span class="single-timeline-horizontal"></span>
+							</div>
+							<div class="timeline">
+								<div class="timeline-content">
+									<h4 class="title">
+										Bihar School Examination Board
+									</h4>
+									<h5></h5>
+									<p class="description">
+										Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu
+										fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="single-horizontal-timeline">
+							<div class="experience-time">
+								<h2>2014 - 2016</h2>
+								<h3>High School</h3>
+							</div>
+							<div class="timeline-horizontal-border">
+								<i class="fa fa-circle" aria-hidden="true"></i>
+								<span class="single-timeline-horizontal spacial-horizontal-line
+									"></span>
+							</div>
+							<div class="timeline">
+								<div class="timeline-content">
+									<h4 class="title">
+										Bihar School Examination Board
+									</h4>
+									<h5></h5>
+									<p class="description">
+										Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu
+										fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<section id="skills" class="skills">
+		<div class="skill-content">
+			<div class="section-heading text-center">
+				<h2>skills</h2>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="single-skill-content">
+							<div class="barWrapper">
+								<span class="progressText">Python (Programming Language)</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="80"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>80%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText">Object-Oriented Programming (OOP)</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="70"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>70%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText">Django ORM </span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="70"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>70%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText">Django REST Framework</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="40"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>40%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText">Flask</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="60"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>60%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText">My SQL , SQLITE</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="60"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>60%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText">Verson Control (GIT , GIT-HUB)</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="90"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>90%</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="single-skill-content">
+							<div class="barWrapper">
+								<span class="progressText">html 5</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="90"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>90%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText">css 3</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="85"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>55%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText">Javascript</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="50"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>50%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText"> Bootstrap</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="85"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>85%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText">Docker</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="40"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>40%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText">Linux</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="90"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>90%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText">Deployment</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="80"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>80%</h3>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <section id="experience" class="experience">
+			<div class="section-heading text-center">
+				<h2>experience</h2>
+			</div>
+			<div class="container">
+				<div class="experience-content">
+						<div class="main-timeline">
+							<ul>
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="experience-time text-right">
+													<h2>2018 - Present</h2>
+													<h3>creative director</h3>
+												</div>
+											</div>
+											<div class="col-md-offset-1 col-md-5">
+												<div class="timeline">
+													<div class="timeline-content">
+														<h4 class="title">
+															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+															hoplony tech limited
+														</h4>
+														<h5>newyork, USA</h5>
+														<p class="description">
+															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														2016 - 2018
+													</h2>
+													<h3>associate design director</h3>
+												</div>
+											</div>
+											<div class="col-md-5">
+												<div class="timeline">
+													<div class="timeline-content text-right">
+														<h4 class="title">
+															hoplony tech limited
+														</h4>
+														<h5>newyork, USA</h5>
+														<p class="description">
+															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-offset-1 col-md-5 experience-time-main">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														2016 - 2018
+													</h2>
+													<h3>associate design director</h3>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="experience-time text-right">
+													<h2>2013 - 2016</h2>
+													<h3>senior UI/UX designer</h3>
+												</div>
+											</div>
+											<div class="col-md-offset-1 col-md-5">
+												<div class="timeline">
+													<div class="timeline-content">
+														<h4 class="title">
+															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+															hoplony tech limited
+														</h4>
+														<h5>newyork, USA</h5>
+														<p class="description">
+															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														2012 - 2013
+													</h2>
+													<h3>UI/UX designer</h3>
+												</div>
+											</div>
+											<div class="col-md-5">
+												<div class="timeline">
+													<div class="timeline-content text-right">
+														<h4 class="title">
+															hoplony tech limited
+														</h4>
+														<h5>newyork, USA</h5>
+														<p class="description">
+															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-offset-1 col-md-5 experience-time-main">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														2012 - 2013
+													</h2>
+													<h3>UI/UX designer</h3>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="experience-time text-right">
+													<h2>2010 - 2012</h2>
+													<h3>frontend developer</h3>
+												</div>
+											</div>
+											<div class="col-md-offset-1 col-md-5">
+												<div class="timeline">
+													<div class="timeline-content">
+														<h4 class="title">
+															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+															hoplony tech limited
+														</h4>
+														<h5>newyork, USA</h5>
+														<p class="description">
+															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+			</div>
+		</section> -->
+	<section id="profiles" class="profiles">
+		<div class="profiles-details">
+			<div class="section-heading text-center">
+				<h2>profiles</h2>
+			</div>
+			<div class="container">
+				<div class="profiles-content">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="single-profile">
+								<div class="profile-txt">
+									<a href="https://twitter.com/Mannu_258 " target="_blank"><i class="fa fa-twitter"></i></a>
+									<div class="profile-icon-name">Twitter</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<a href="https://twitter.com/Mannu_258 " target="_blank"><i class="fa fa-twitter"></i></a>
+										<div class="profile-icon-name">Twitter</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-profile">
+								<div class="profile-txt">
+									<a href="https://www.linkedin.com/in/mandeep-mishra-843378223/" target="_blank"><i class="fa fa-linkedin"></i></a>
+									<div class="profile-icon-name">Linkdin</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<a href="https://www.linkedin.com/in/mandeep-mishra-843378223/" target="_blank"><i class="fa fa-linkedin"></i></a>
+										<div class="profile-icon-name">Linkdin</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-profile profile-no-border">
+								<div class="profile-txt">
+									<a href="https://github.com/Mannu258" target="_blank"><i class="flaticon-github-logo"></i></a>
+									<div class="profile-icon-name">github</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<a href="https://github.com/Mannu258" target="_blank"><i class="flaticon-github-logo"></i></a>
+										<div class="profile-icon-name">github</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="profile-border"></div>
+						<div class="row">
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-flickr-website-logo-silhouette"></i></a>
+										<div class="profile-icon-name">flickR</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-flickr-website-logo-silhouette"></i></a>
+											<div class="profile-icon-name">flickR</div>
+										</div>
+									</div>
+								</div>
+							</div> -->
+					<!-- <div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-smug"></i></a>
+										<div class="profile-icon-name">smungMung</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-smug"></i></a>
+											<div class="profile-icon-name">smungMung</div>
+										</div>
+									</div>
+								</div>
+							</div> -->
+					<!-- <div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-squarespace-logo"></i></a>
+										<div class="profile-icon-name">squareSpace</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-squarespace-logo"></i></a>
+											<div class="profile-icon-name">squareSpace</div>
+										</div>
+									</div>
+								</div>
+							</div> -->
+					<!-- <div class="col-sm-3">
+								<div class="single-profile profile-no-border">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-bitbucket-logotype-camera-lens-in-perspective"></i></a>
+										<div class="profile-icon-name">bitBucket</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-bitbucket-logotype-camera-lens-in-perspective"></i></a>
+											<div class="profile-icon-name">bitBucket</div>
+										</div>
+									</div>
+								</div> -->
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+
+	</section>
+	<section id="portfolio" class="portfolio">
+		<div class="portfolio-details">
+			<div class="section-heading text-center">
+				<h2>portfolio</h2>
+			</div>
+			<div class="container">
+				<div class="portfolio-content">
+					<div class="isotope">
+						<div class="row">
+
+							<div class="col-sm-4">
+								<div class="item">
+									<img src="{{ url_for('static', filename='assets/images/portfolio/p1.jpg')}}">
+									<div class="isotope-overlay">
+										<a href="#">
+											OG Movers
+										</a>
+
+									</div>
+
+									<p class="text-center">OG Movers is a moving service provider that offers a range of
+										services to facilitate seamless transitions for their clients. They specialize
+										in home and office relocations, providing efficient loading and unloading
+										solutions to ensure a stress-free moving experience. Here are some highlights
+										about OG Movers</p>
+
+								</div>
+								<!-- <div class="item">
+										<img src = "{{ url_for('static', filename='assets/images/portfolio/p2.jpg')}}" >
+										<div class="isotope-overlay">
+											<a href="#">
+												ui/ux design
+											</a>
+										</div>
+									</div> -->
+							</div>
+							<div class="col-sm-4">
+								<div class="item">
+									<img src="{{ url_for('static', filename='assets/images/portfolio/p3.jpg')}}">
+									<div class="isotope-overlay">
+										<a href="#">
+											Database Management system
+										</a>
+									</div>
+									<p class="text-center">Their system is robust, efficient, and easy to use. It has
+										significantly improved our data organization and accessibility, enabling us to
+										make more data-driven decisions.</p>
+
+								</div>
+							</div>
+
+							<div class="col-sm-4">
+								<div class="item">
+									<img src="{{ url_for('static', filename='assets/images/portfolio/p4.jpg')}}">
+									<div class="isotope-overlay">
+										<a href="#">
+											My Awesomecart
+										</a>
+									</div>
+
+									<p class="text-center">My Awesomecart, facilitated by O G Mobers, has revolutionized
+										the way we conduct business. It’s not just a platform, it’s a virtual
+										marketplace that bridges the gap between buyers and sellers. The user-friendly
+										interface and seamless transactions have made shopping a delightful experience.
+										O G Mobers has truly transformed the e-commerce landscape with My Awesomecart.”
+									</p>
+									</p>
+								</div>
+								<!-- <div class="item">
+										<img src = "{{ url_for('static', filename='assets/images/portfolio/p5.jpg')}}" alt="portfolio image"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												web development
+											</a>
+										</div>
+									</div> -->
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	</section>
+	<section id="contact" class="contact">
+		<div class="section-heading text-center">
+			<h2>contact me</h2>
+		</div>
+		<div class="container">
+			<div class="contact-content">
+				<div class="row">
+					<div class="col-md-offset-1 col-md-5 col-sm-6">
+						<div class="single-contact-box">
+							<div class="contact-form">
+								<form>
+									<div class="row">
+										<div class="col-sm-6 col-xs-12">
+											<div class="form-group">
+												<input type="text" class="form-control" id="name" placeholder="Name*"
+													name="name">
+											</div>
+										</div>
+										<div class="col-sm-6 col-xs-12">
+											<div class="form-group">
+												<input type="email" class="form-control" id="email" placeholder="Email*"
+													name="email">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="form-group">
+												<input type="text" class="form-control" id="subject"
+													placeholder="Subject" name="subject">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="form-group">
+												<textarea class="form-control" rows="8" id="comment"
+													placeholder="Message"></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="single-contact-btn">
+												<a class="contact-btn" href="#" role="button">submit</a>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-offset-1 col-md-5 col-sm-6">
+						<div class="single-contact-box">
+							<div class="contact-adress">
+								<div class="contact-add-head">
+									<h3>Mandeep Mishra</h3>
+									<p>Python Django(Web Developer)</p>
+								</div>
+								<div class="contact-add-info">
+									<div class="single-contact-add-info">
+										<h3>phone</h3>
+										<p>+91 9386090900</p>
+									</div>
+									<div class="single-contact-add-info">
+										<h3>email</h3>
+										<p>Mishramandeep@outlook.com</p>
+									</div>
+									<!-- <div class="single-contact-add-info">
+											<h3>website</h3>
+											<p>www.brownsine.com</p>
+										</div> -->
+								</div>
+							</div>
+							<div class="hm-foot-icon">
+								<ul>
+									<li><a href="https://github.com/Mannu258" target="_blank"><i class="fa fa-github"></i></a></li>
+									<!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
+									<li><a href="https://twitter.com/Mannu_258 " target="_blank"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/mandeep-mishra-843378223/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+									<!-- <li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer id="footer-copyright" class="footer-copyright">
+		<div class="container">
+			<div class="hm-footer-copyright text-center">
+				<p>
+					&copy; copyright Mandeep. design and developed by
+				</p>
+			</div>
+		</div>
+		<div id="scroll-Top">
+			<div class="return-to-top">
+				<i class="fa fa-angle-up " id="scroll-top"></i>
+			</div>
+		</div>
+	</footer>
+	<script src="{{ url_for('static', filename='assets/js/jquery.js') }}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="{{ url_for('static', filename='assets/js/bootstrap.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/bootsnav.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/jquery.sticky.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/progressbar.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/jquery.appear.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/owl.carousel.min.js') }}"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js'></script>
+	<script src="{{ url_for('static', filename='assets/js/custom.js') }}"></script>
+
+</body>
 <!DOCTYPE html>
 <html lang="en">
 

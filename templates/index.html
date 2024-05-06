@@ -1,0 +1,1059 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext"
+		rel="stylesheet">
+	<title>portfolio</title>
+	<link rel="shortcut icon" type="image/icon" href="{{ url_for('static', filename='assets/logo/favicon.png') }}" />
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/flaticon.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/animate.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/owl.carousel.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/owl.theme.default.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/bootsnav.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/responsive.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	<header class="top-area">
+		<div class="header-area">
+			<nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+							<i class="fa fa-bars"></i>
+						</button>
+						<a class="navbar-brand" href="/">Mandeep</a>
+					</div>
+					<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+							<li class=" smooth-menu active"></li>
+							<li class=" smooth-menu"><a href="#education">education</a></li>
+							<li class="smooth-menu"><a href="#skills">skills</a></li>
+							<!-- <li class="smooth-menu"><a href="#experience">experience</a></li> -->
+							<li class="smooth-menu"><a href="#profiles">profile</a></li>
+							<li class="smooth-menu"><a href="#portfolio">portfolio</a></li>
+							<li class="smooth-menu"><a href="#clients">clients</a></li>
+							<li class="smooth-menu"><a href="#contact">contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="clearfix"></div>
+	</header>
+	<section id="welcome-hero" class="welcome-hero">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="header-text">
+						<h2>hi <span>,</span> i am <br> Mandeep <br> Mishra <span>.</span> </h2>
+						<p>Web developer</p>
+						<a href="{{ url_for('static', filename='assets/download/MANDEEP_CV.pdf') }}" download>download resume</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<section id="about" class="about">
+		<div class="section-heading text-center">
+			<h2>about me</h2>
+		</div>
+		<div class="container">
+			<div class="about-content">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="single-about-txt">
+							<h3>
+								I'm a Python and Django Developer with a hunger or building powerful web experiences.
+								Currently, I am pursuing my passion in building an ecommerce application using Django
+								Let's create something amazing together!
+							</h3>
+							<p>
+								it’s the work that happens behind the scenes to make a website look great, work fast,
+								and perform well with a seamless user experience. Web Developers, or ‘devs’, do this by
+								using a variety of coding languages. The languages they use depend on the types of tasks
+								they are performing and the platforms on which they are working.
+								Front-End Development: Involves creating the visual aspects of a website that users see
+								and interact with through web browsers. Back-End Development: Focuses on server-side
+								development with databases and website architecture. Full-Stack Development: Combines
+								both front-end and back-end development expertise.
+							</p>
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="single-about-add-info">
+										<h3>phone</h3>
+										<p>9386090900</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="single-about-add-info">
+										<h3>email</h3>
+										<p>mishramandeep@outlook.com</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-offset-1 col-sm-5">
+						<div class="single-about-img">
+							<img src="{{ url_for('static', filename='assets/images/about/profile_image.jpg') }}">
+							<div class="about-list-icon">
+								<ul>
+
+									<li>
+										<a href="https://github.com/Mannu258" target="_blank">
+											<i class="fa fa-github" aria-hidden="true"></i>
+										</a>
+
+									</li>
+									<li>
+										<a href="https://twitter.com/Mannu_258 " target="_blank">
+											<i class="fa fa-twitter" aria-hidden="true"></i>
+										</a>
+
+									</li>
+									<li>
+										<a href="https://www.linkedin.com/in/mandeep-mishra-843378223/" target="_blank"">
+											<i class="fa fa-linkedin" aria-hidden="true"></i>
+										</a>
+									</li>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="education" class="education">
+		<div class="section-heading text-center">
+			<h2>education</h2>
+		</div>
+		<div class="container">
+			<div class="education-horizontal-timeline">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="single-horizontal-timeline">
+							<div class="experience-time">
+								<h2>2018 - 2022</h2>
+								<h3>Bechlor <span>of </span> computer application</h3>
+							</div>
+							<div class="timeline-horizontal-border">
+								<i class="fa fa-circle" aria-hidden="true"></i>
+								<span class="single-timeline-horizontal"></span>
+							</div>
+							<div class="timeline">
+								<div class="timeline-content">
+									<h4 class="title">
+										Bhupendra Narayan Mandal University
+									</h4>
+									<h5></h5>
+
+									<p class="description">
+										Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu
+										fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="single-horizontal-timeline">
+							<div class="experience-time">
+								<h2>2016 - 2018</h2>
+								<h3>Intermediate</h3>
+							</div>
+							<div class="timeline-horizontal-border">
+								<i class="fa fa-circle" aria-hidden="true"></i>
+								<span class="single-timeline-horizontal"></span>
+							</div>
+							<div class="timeline">
+								<div class="timeline-content">
+									<h4 class="title">
+										Bihar School Examination Board
+									</h4>
+									<h5></h5>
+									<p class="description">
+										Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu
+										fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="single-horizontal-timeline">
+							<div class="experience-time">
+								<h2>2014 - 2016</h2>
+								<h3>High School</h3>
+							</div>
+							<div class="timeline-horizontal-border">
+								<i class="fa fa-circle" aria-hidden="true"></i>
+								<span class="single-timeline-horizontal spacial-horizontal-line
+									"></span>
+							</div>
+							<div class="timeline">
+								<div class="timeline-content">
+									<h4 class="title">
+										Bihar School Examination Board
+									</h4>
+									<h5></h5>
+									<p class="description">
+										Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu
+										fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<section id="skills" class="skills">
+		<div class="skill-content">
+			<div class="section-heading text-center">
+				<h2>skills</h2>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="single-skill-content">
+							<div class="barWrapper">
+								<span class="progressText">Python (Programming Language)</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="80"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>80%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText">Object-Oriented Programming (OOP)</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="70"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>70%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText">Django ORM </span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="70"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>70%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText">Django REST Framework</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="40"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>40%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText">Flask</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="60"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>60%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText">My SQL , SQLITE</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="60"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>60%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText">Verson Control (GIT , GIT-HUB)</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="90"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>90%</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="single-skill-content">
+							<div class="barWrapper">
+								<span class="progressText">html 5</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="90"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>90%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText">css 3</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="85"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>55%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText">Javascript</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="50"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>50%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText"> Bootstrap</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="85"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>85%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText">Docker</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="40"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>40%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText">Linux</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="90"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>90%</h3>
+								</div>
+							</div>
+							<div class="barWrapper">
+								<span class="progressText">Deployment</span>
+								<div class="single-progress-txt">
+									<div class="progress ">
+										<div class="progress-bar" role="progressbar" aria-valuenow="80"
+											aria-valuemin="10" aria-valuemax="100">
+
+										</div>
+									</div>
+									<h3>80%</h3>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <section id="experience" class="experience">
+			<div class="section-heading text-center">
+				<h2>experience</h2>
+			</div>
+			<div class="container">
+				<div class="experience-content">
+						<div class="main-timeline">
+							<ul>
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="experience-time text-right">
+													<h2>2018 - Present</h2>
+													<h3>creative director</h3>
+												</div>
+											</div>
+											<div class="col-md-offset-1 col-md-5">
+												<div class="timeline">
+													<div class="timeline-content">
+														<h4 class="title">
+															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+															hoplony tech limited
+														</h4>
+														<h5>newyork, USA</h5>
+														<p class="description">
+															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														2016 - 2018
+													</h2>
+													<h3>associate design director</h3>
+												</div>
+											</div>
+											<div class="col-md-5">
+												<div class="timeline">
+													<div class="timeline-content text-right">
+														<h4 class="title">
+															hoplony tech limited
+														</h4>
+														<h5>newyork, USA</h5>
+														<p class="description">
+															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-offset-1 col-md-5 experience-time-main">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														2016 - 2018
+													</h2>
+													<h3>associate design director</h3>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="experience-time text-right">
+													<h2>2013 - 2016</h2>
+													<h3>senior UI/UX designer</h3>
+												</div>
+											</div>
+											<div class="col-md-offset-1 col-md-5">
+												<div class="timeline">
+													<div class="timeline-content">
+														<h4 class="title">
+															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+															hoplony tech limited
+														</h4>
+														<h5>newyork, USA</h5>
+														<p class="description">
+															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														2012 - 2013
+													</h2>
+													<h3>UI/UX designer</h3>
+												</div>
+											</div>
+											<div class="col-md-5">
+												<div class="timeline">
+													<div class="timeline-content text-right">
+														<h4 class="title">
+															hoplony tech limited
+														</h4>
+														<h5>newyork, USA</h5>
+														<p class="description">
+															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-offset-1 col-md-5 experience-time-main">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														2012 - 2013
+													</h2>
+													<h3>UI/UX designer</h3>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="experience-time text-right">
+													<h2>2010 - 2012</h2>
+													<h3>frontend developer</h3>
+												</div>
+											</div>
+											<div class="col-md-offset-1 col-md-5">
+												<div class="timeline">
+													<div class="timeline-content">
+														<h4 class="title">
+															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+															hoplony tech limited
+														</h4>
+														<h5>newyork, USA</h5>
+														<p class="description">
+															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+			</div>
+		</section> -->
+	<section id="profiles" class="profiles">
+		<div class="profiles-details">
+			<div class="section-heading text-center">
+				<h2>profiles</h2>
+			</div>
+			<div class="container">
+				<div class="profiles-content">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="single-profile">
+								<div class="profile-txt">
+									<a href="https://twitter.com/Mannu_258 " target="_blank"><i class="fa fa-twitter"></i></a>
+									<div class="profile-icon-name">Twitter</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<a href="https://twitter.com/Mannu_258 " target="_blank"><i class="fa fa-twitter"></i></a>
+										<div class="profile-icon-name">Twitter</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-profile">
+								<div class="profile-txt">
+									<a href="https://www.linkedin.com/in/mandeep-mishra-843378223/" target="_blank"><i class="fa fa-linkedin"></i></a>
+									<div class="profile-icon-name">Linkdin</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<a href="https://www.linkedin.com/in/mandeep-mishra-843378223/" target="_blank"><i class="fa fa-linkedin"></i></a>
+										<div class="profile-icon-name">Linkdin</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-profile profile-no-border">
+								<div class="profile-txt">
+									<a href="https://github.com/Mannu258" target="_blank"><i class="flaticon-github-logo"></i></a>
+									<div class="profile-icon-name">github</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<a href="https://github.com/Mannu258" target="_blank"><i class="flaticon-github-logo"></i></a>
+										<div class="profile-icon-name">github</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="profile-border"></div>
+						<div class="row">
+							<div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-flickr-website-logo-silhouette"></i></a>
+										<div class="profile-icon-name">flickR</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-flickr-website-logo-silhouette"></i></a>
+											<div class="profile-icon-name">flickR</div>
+										</div>
+									</div>
+								</div>
+							</div> -->
+					<!-- <div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-smug"></i></a>
+										<div class="profile-icon-name">smungMung</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-smug"></i></a>
+											<div class="profile-icon-name">smungMung</div>
+										</div>
+									</div>
+								</div>
+							</div> -->
+					<!-- <div class="col-sm-3">
+								<div class="single-profile">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-squarespace-logo"></i></a>
+										<div class="profile-icon-name">squareSpace</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-squarespace-logo"></i></a>
+											<div class="profile-icon-name">squareSpace</div>
+										</div>
+									</div>
+								</div>
+							</div> -->
+					<!-- <div class="col-sm-3">
+								<div class="single-profile profile-no-border">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-bitbucket-logotype-camera-lens-in-perspective"></i></a>
+										<div class="profile-icon-name">bitBucket</div>
+									</div>
+									<div class="single-profile-overlay">
+										<div class="profile-txt">
+											<a href=""><i class="flaticon-bitbucket-logotype-camera-lens-in-perspective"></i></a>
+											<div class="profile-icon-name">bitBucket</div>
+										</div>
+									</div>
+								</div> -->
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+
+	</section>
+	<section id="portfolio" class="portfolio">
+		<div class="portfolio-details">
+			<div class="section-heading text-center">
+				<h2>portfolio</h2>
+			</div>
+			<div class="container">
+				<div class="portfolio-content">
+					<div class="isotope">
+						<div class="row">
+
+							<div class="col-sm-4">
+								<div class="item">
+									<img src="{{ url_for('static', filename='assets/images/portfolio/p1.jpg')}}">
+									<div class="isotope-overlay">
+										<a href="#">
+											OG Movers
+										</a>
+
+									</div>
+
+									<p class="text-center">OG Movers is a moving service provider that offers a range of
+										services to facilitate seamless transitions for their clients. They specialize
+										in home and office relocations, providing efficient loading and unloading
+										solutions to ensure a stress-free moving experience. Here are some highlights
+										about OG Movers</p>
+
+								</div>
+								<!-- <div class="item">
+										<img src = "{{ url_for('static', filename='assets/images/portfolio/p2.jpg')}}" >
+										<div class="isotope-overlay">
+											<a href="#">
+												ui/ux design
+											</a>
+										</div>
+									</div> -->
+							</div>
+							<div class="col-sm-4">
+								<div class="item">
+									<img src="{{ url_for('static', filename='assets/images/portfolio/p3.jpg')}}">
+									<div class="isotope-overlay">
+										<a href="#">
+											Database Management system
+										</a>
+									</div>
+									<p class="text-center">Their system is robust, efficient, and easy to use. It has
+										significantly improved our data organization and accessibility, enabling us to
+										make more data-driven decisions.</p>
+
+								</div>
+							</div>
+
+							<div class="col-sm-4">
+								<div class="item">
+									<img src="{{ url_for('static', filename='assets/images/portfolio/p4.jpg')}}">
+									<div class="isotope-overlay">
+										<a href="#">
+											My Awesomecart
+										</a>
+									</div>
+
+									<p class="text-center">My Awesomecart, facilitated by O G Mobers, has revolutionized
+										the way we conduct business. It’s not just a platform, it’s a virtual
+										marketplace that bridges the gap between buyers and sellers. The user-friendly
+										interface and seamless transactions have made shopping a delightful experience.
+										O G Mobers has truly transformed the e-commerce landscape with My Awesomecart.”
+									</p>
+									</p>
+								</div>
+								<!-- <div class="item">
+										<img src = "{{ url_for('static', filename='assets/images/portfolio/p5.jpg')}}" alt="portfolio image"/>
+										<div class="isotope-overlay">
+											<a href="#">
+												web development
+											</a>
+										</div>
+									</div> -->
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	</section>
+	<section id="contact" class="contact">
+		<div class="section-heading text-center">
+			<h2>contact me</h2>
+		</div>
+		<div class="container">
+			<div class="contact-content">
+				<div class="row">
+					<div class="col-md-offset-1 col-md-5 col-sm-6">
+						<div class="single-contact-box">
+							<div class="contact-form">
+								<form>
+									<div class="row">
+										<div class="col-sm-6 col-xs-12">
+											<div class="form-group">
+												<input type="text" class="form-control" id="name" placeholder="Name*"
+													name="name">
+											</div>
+										</div>
+										<div class="col-sm-6 col-xs-12">
+											<div class="form-group">
+												<input type="email" class="form-control" id="email" placeholder="Email*"
+													name="email">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="form-group">
+												<input type="text" class="form-control" id="subject"
+													placeholder="Subject" name="subject">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="form-group">
+												<textarea class="form-control" rows="8" id="comment"
+													placeholder="Message"></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="single-contact-btn">
+												<a class="contact-btn" href="#" role="button">submit</a>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-offset-1 col-md-5 col-sm-6">
+						<div class="single-contact-box">
+							<div class="contact-adress">
+								<div class="contact-add-head">
+									<h3>Mandeep Mishra</h3>
+									<p>Python Django(Web Developer)</p>
+								</div>
+								<div class="contact-add-info">
+									<div class="single-contact-add-info">
+										<h3>phone</h3>
+										<p>+91 9386090900</p>
+									</div>
+									<div class="single-contact-add-info">
+										<h3>email</h3>
+										<p>Mishramandeep@outlook.com</p>
+									</div>
+									<!-- <div class="single-contact-add-info">
+											<h3>website</h3>
+											<p>www.brownsine.com</p>
+										</div> -->
+								</div>
+							</div>
+							<div class="hm-foot-icon">
+								<ul>
+									<li><a href="https://github.com/Mannu258" target="_blank"><i class="fa fa-github"></i></a></li>
+									<!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
+									<li><a href="https://twitter.com/Mannu_258 " target="_blank"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/mandeep-mishra-843378223/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+									<!-- <li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer id="footer-copyright" class="footer-copyright">
+		<div class="container">
+			<div class="hm-footer-copyright text-center">
+				<p>
+					&copy; copyright Mandeep. design and developed by
+				</p>
+			</div>
+		</div>
+		<div id="scroll-Top">
+			<div class="return-to-top">
+				<i class="fa fa-angle-up " id="scroll-top"></i>
+			</div>
+		</div>
+	</footer>
+	<script src="{{ url_for('static', filename='assets/js/jquery.js') }}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="{{ url_for('static', filename='assets/js/bootstrap.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/bootsnav.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/jquery.sticky.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/progressbar.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/jquery.appear.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/js/owl.carousel.min.js') }}"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js'></script>
+	<script src="{{ url_for('static', filename='assets/js/custom.js') }}"></script>
+
+</body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio-mandeep</title>
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='/media/pf.png') }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/main.css') }}">
+</head>
+
+<body>
+  <video autoplay muted loop id="bgVideo">
+    <source src="{{ url_for('static', filename='css/WhatsApp Video 2024-04-13 at 23.32.07 (1).mp4') }}"
+      type="video/mp4">
+  </video>
+   <div class="container">
+    <div class="row m-2">
+      <div class="col-md-3">
+        <div class="card card-body h-100 border-info" id="profile-wrapper">
+
+          <img id="profile-pic" src="{{ url_for('static', filename='/media/profile.png') }}">
+          <hr>
+          <h4>Hi I'm Mandeep</h4>
+          <marquee>
+            <p>I love coding, doing research, and collaborating.</p>
+          </marquee>
+          <p><span><b>Python (Programming Language)</b><br></span> <span>• Django</span>
+            • Flask <span>• Object-Oriented Programming (OOP)</span> •Django REST Framework •Full-Stack Development •
+            HTML • Python
+            (Programming Language) •Django REST Framework •Web Development • Object-Oriented Programming (OOP) • HTML5 •
+            Cascading Style Sheets (CSS) •
+            JavaScript • Bootstrap (Framework) • MySQL • Sqlite • GIT GITHUB</p>
+          <ul class="social-link">
+            <li><a href="https://www.linkedin.com/in/mandeep-mishra-843378223/" target="_blank"><img class="social"
+                  src="{{ url_for('static', filename='/media/linkedin.png') }}"></a></li>
+            <li><a href="https://twitter.com/Mannu_258 " target="_blank"><img class="social"
+                  src="{{ url_for('static', filename='/media/twitter.png') }}"></a></li>
+            <li><a href="https://github.com/Mannu258" target="_blank"><img class="social"
+                  src="{{ url_for('static', filename='/media/github.png') }}"></a></li>
+          </ul>
+        </div>
+        <br>
+      </div>
+      <div class="col-md-9">
+        <div class="card card-body h-100 border-info">
+          <h3 class="text-center">Website Development is the process of building and maintaining websites</h3>
+          <hr>
+          <p>I'm a Python and Django Developer with a hunger or building powerful web experiences. Currently, I am
+            pursuing my passion in building an ecommerce application using Django Let's create something amazing
+            together!</p>
+          <p>it’s the work that happens behind the scenes to make a website look great, work fast, and perform well with
+            a seamless user experience. Web Developers, or ‘devs’, do this by using a variety of coding languages. The
+            languages they use depend on the types of tasks they are performing and the platforms on which they are
+            working.
+
+            <br><br><span class="m-5"><b> • Web Development Overview:</b></span><br><br>
+
+            Front-End Development: Involves creating the visual aspects of a website that users see and interact with
+            through web browsers.
+            Back-End Development: Focuses on server-side development with databases and website architecture.
+            Full-Stack Development: Combines both front-end and back-end development expertise.
+            <br><br><span class="m-5 "><b> • Short Bio:</b></span><br><br>
+            Web development is a dynamic field that combines creativity and technical skills to build and
+            improve websites and web applications. It requires knowledge of programming languages like HTML, CSS,
+            JavaScript for the front-end, and languages like Python, Ruby, PHP for the back-end, along with an
+            understanding of databases and server management. Web developers must stay up-to-date with the latest
+            technologies and industry trends to create responsive, user-friendly, and secure websites. They play a
+            crucial role in the success of online businesses and the digital presence of organizations. The image you
+            provided lists essential skills and tools for web developers, emphasizing the importance of a diverse skill
+            set in this field.
+          </p>
+        </div>
+      </div>
+      <div class="row m-4">
+        <div class="col-md-6">
+          <div class="card card-body h-100">
+            <h5 class="text-center">My experience as a Developer</h5>
+            <hr>
+            <p>I am a passionate and dedicated Web Developer with a deep understanding of various programming languages,
+              frameworks, and technologies. With a strong foundation in Python, Django,Flask, HTML, CSS, JavaScript, and
+              Bootstrap, I am have developed a wide range of websites and web applications that are not only visually
+              appealing but also highly functional and user-friendly.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-body h-100">
+            <h5 class="text-center">Personal Details</h5>
+            <hr>
+            <p>Name:- Mandeep Mishra (Web Application Developer)</p>
+            <p>Mobile No:- +919386090900</p>
+            <p>Email ID:- mishramandeep@outlook.com</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row m-4">
+        <div class="col-md-6">
+          <div class="card card-body h-100">
+            <h5 class="text-center">My Clients</h5>
+            <hr>
+            <h4 class="text-center"> 1. OG Movers</h4>
+            <a class="text-center" href="https://https://www.ogmovers.com.au/">OG Movers</a>
+            <p class="text-center">OG Movers is a moving service provider that offers a range of services to facilitate
+              seamless transitions for their clients. They specialize in home and office relocations, providing
+              efficient loading and unloading solutions to ensure a stress-free moving experience. Here are some
+              highlights about OG Movers</p>
+            <h4 class="text-center"> 2. Mojopanda Pvt Ltd</h4>
+            <a class="text-center" href="https://www.dbmojopanda.com/">Database Management</a>
+            <p>Their system is robust, efficient, and easy to use. It has significantly improved our data organization
+              and accessibility, enabling us to make more data-driven decisions.</p>
+            <h4 class="text-center"> 3. OG Movers</h4>
+            <a class="text-center" href="https://myawesomecart.pythonanywhere.com/">My Awesomecart</a>
+            <p>My Awesomecart “My Awesomecart, facilitated by O G Mobers, has revolutionized the way we conduct
+              business. It’s not just a platform, it’s a virtual marketplace that bridges the gap between buyers and
+              sellers. The user-friendly interface and seamless transactions have made shopping a delightful experience.
+              O G Mobers has truly transformed the e-commerce landscape with My Awesomecart.”</p>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-body h-100">
+            <h5 class="text-center">Client Testimonial</h5>
+            <hr>
+            <p> <span class="fw-bold">1 . O G Movers </span> - Moving can be one of life’s most stressful events, but
+              with OG Movers, it was a breeze. From the first call to the final box being unpacked, the team at OG
+              Movers was professional, courteous, and incredibly efficient. They handled our home relocation with such
+              care that it felt as if they were moving their own belongings. Their attention to detail and the seamless
+              coordination between packing, loading, and unloading were remarkable. Not only did they ensure that
+              everything arrived safely, but they also went above and beyond to accommodate our scheduling needs. We
+              couldn’t be happier with the service provided and would highly recommend OG Movers to anyone looking for a
+              stress-free move.”</p>
+
+            <p><span class="fw-bold">2 . Mojopanda Pvt Ltd </span>- Database Management “Mojopanda Pvt Ltd has provided
+              us with an exceptional database management solution. Their system is robust, efficient, and easy to use.
+              It has significantly improved our data organization and accessibility, enabling us to make more
+              data-driven decisions. We highly recommend Mojopanda Pvt Ltd for their outstanding services in database
+              management.”</p>
+
+            <p><span class="fw-bold">3. OG Movers</span> -1. OG Movers - My Awesomecart: ‘My Awesomecart,
+              facilitated by OG Movers, has revolutionized the way we conduct business. It’s not just a platform, it’s a
+              virtual marketplace that bridges the gap between buyers and sellers. The user-friendly interface and
+              seamless transactions have made shopping a delightful experience. OG Movers has truly transformed the
+              e-commerce landscape with My Awesomecart.”</p>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>

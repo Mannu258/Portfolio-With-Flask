@@ -33,7 +33,7 @@
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 							<i class="fa fa-bars"></i>
 						</button>
-						<a class="navbar-brand" href="index.html">Mandeep</a>
+						<a class="navbar-brand" href="/">Mandeep</a>
 					</div>
 					<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
 						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
@@ -59,7 +59,7 @@
 					<div class="header-text">
 						<h2>hi <span>,</span> i am <br> Mandeep <br> Mishra <span>.</span> </h2>
 						<p>Web developer</p>
-						<a href="assets/download/browney.txt" download>download resume</a>
+						<a href="{{ url_for('static', filename='assets/download/MANDEEP_CV.pdf') }}" download>download resume</a>
 					</div>
 				</div>
 			</div>
@@ -113,19 +113,19 @@
 								<ul>
 
 									<li>
-										<a href="#">
+										<a href="https://github.com/Mannu258" target="_blank">
 											<i class="fa fa-github" aria-hidden="true"></i>
 										</a>
 
 									</li>
 									<li>
-										<a href="#">
+										<a href="https://twitter.com/Mannu_258 " target="_blank">
 											<i class="fa fa-twitter" aria-hidden="true"></i>
 										</a>
 
 									</li>
 									<li>
-										<a href="#">
+										<a href="https://www.linkedin.com/in/mandeep-mishra-843378223/" target="_blank"">
 											<i class="fa fa-linkedin" aria-hidden="true"></i>
 										</a>
 									</li>
@@ -594,12 +594,12 @@
 						<div class="col-sm-3">
 							<div class="single-profile">
 								<div class="profile-txt">
-									<a href=""><i class="fa fa-twitter"></i></a>
+									<a href="https://twitter.com/Mannu_258 " target="_blank"><i class="fa fa-twitter"></i></a>
 									<div class="profile-icon-name">Twitter</div>
 								</div>
 								<div class="single-profile-overlay">
 									<div class="profile-txt">
-										<a href=""><i class="fa fa-twitter"></i></a>
+										<a href="https://twitter.com/Mannu_258 " target="_blank"><i class="fa fa-twitter"></i></a>
 										<div class="profile-icon-name">Twitter</div>
 									</div>
 								</div>
@@ -608,12 +608,12 @@
 						<div class="col-sm-3">
 							<div class="single-profile">
 								<div class="profile-txt">
-									<a href=""><i class="fa fa-linkedin"></i></a>
+									<a href="https://www.linkedin.com/in/mandeep-mishra-843378223/" target="_blank"><i class="fa fa-linkedin"></i></a>
 									<div class="profile-icon-name">Linkdin</div>
 								</div>
 								<div class="single-profile-overlay">
 									<div class="profile-txt">
-										<a href=""><i class="fa fa-linkedin"></i></a>
+										<a href="https://www.linkedin.com/in/mandeep-mishra-843378223/" target="_blank"><i class="fa fa-linkedin"></i></a>
 										<div class="profile-icon-name">Linkdin</div>
 									</div>
 								</div>
@@ -622,12 +622,12 @@
 						<div class="col-sm-3">
 							<div class="single-profile profile-no-border">
 								<div class="profile-txt">
-									<a href=""><i class="flaticon-github-logo"></i></a>
+									<a href="https://github.com/Mannu258" target="_blank"><i class="flaticon-github-logo"></i></a>
 									<div class="profile-icon-name">github</div>
 								</div>
 								<div class="single-profile-overlay">
 									<div class="profile-txt">
-										<a href=""><i class="flaticon-github-logo"></i></a>
+										<a href="https://github.com/Mannu258" target="_blank"><i class="flaticon-github-logo"></i></a>
 										<div class="profile-icon-name">github</div>
 									</div>
 								</div>
@@ -783,54 +783,6 @@
 		</div>
 
 	</section>
-	<section id="clients" class="clients">
-		<div class="section-heading text-center">
-			<h2>clients</h2>
-		</div>
-		<div class="clients-area">
-			<div class="container">
-				<div class="owl-carousel owl-theme" id="client">
-					<div class="item">
-						<a href="#">
-							<img src="{{ url_for('static', filename='assets/images/clients/c1.png')}}">
-						</a>
-					</div>
-					<div class="item">
-						<a href="#">
-							<img src="{{ url_for('static', filename='assets/images/clients/c2.png')}}">
-						</a>
-					</div>
-					<div class="item">
-						<a href="#">
-							<img src="{{ url_for('static', filename='assets/images/clients/c3.png')}}">
-						</a>
-					</div>
-					<div class="item">
-						<a href="#">
-							<img src="{{ url_for('static', filename='assets/images/clients/c4.png')}}">
-						</a>
-					</div>
-					<div class="item">
-						<a href="#">
-							<img src="{{ url_for('static', filename='assets/images/clients/c5.png')}}">
-						</a>
-					</div>
-					<div class="item">
-						<a href="#">
-							<img src="{{ url_for('static', filename='assets/images/clients/c6.png')}}"
-								alt="brand-image" />
-						</a>
-					</div>
-					<div class="item">
-						<a href="#">
-							<img src="{{ url_for('static', filename='assets/images/clients/c7.png')}}"
-								alt="brand-image" />
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 	</section>
 	<section id="contact" class="contact">
 		<div class="section-heading text-center">
@@ -908,10 +860,10 @@
 							</div>
 							<div class="hm-foot-icon">
 								<ul>
-									<li><a href="#"><i class="fa fa-github"></i></a></li>
+									<li><a href="https://github.com/Mannu258" target="_blank"><i class="fa fa-github"></i></a></li>
 									<!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="https://twitter.com/Mannu_258 " target="_blank"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/mandeep-mishra-843378223/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 									<!-- <li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
 								</ul>
 							</div>
@@ -925,8 +877,7 @@
 		<div class="container">
 			<div class="hm-footer-copyright text-center">
 				<p>
-					&copy; copyright yourname. design and developed by <a
-						href="https://www.themesine.com/">themesine</a>
+					&copy; copyright Mandeep. design and developed by
 				</p>
 			</div>
 		</div>

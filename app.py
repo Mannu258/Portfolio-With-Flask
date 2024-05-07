@@ -2,7 +2,6 @@
 from flask import Flask,render_template,request
 
 from flask_sqlalchemy import SQLAlchemy
-from datetime import datetime
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///project.db"
 db = SQLAlchemy(app)
@@ -16,7 +15,13 @@ class Details(db.Model):
 
     def __repr__(self) -> str:
         return f"{self.s_no} - {self.title}"
-
+    
+class Crediantials(db.Model):
+    ID = db.Column(db.Integer,primary_key=True)
+    username = db.Column(db.String(200),nullable=False)
+    password = db.Column(db.String(200),nullable=False)
+    def __repr__(self) -> str:
+        return f"{self.username}"
 
 
 
@@ -32,6 +37,23 @@ def index():
         db.session.commit()  # Commit the changes once
         return render_template('thankyou.html')
     return render_template('index.html')
+
+
+@app.route("/administrator",methods=['POST','GET'])
+def Admin():
+    if request.method == "POST":
+        username = request.form['Username']
+        password = request.form['password']
+        admi = Crediantials.query.filter_by(username=username,password=password).first()
+        if admi:
+            details = Details.query.all()
+            return render_template('Database.html',details=details)
+        else:
+            return render_template('login.html')
+
+    return render_template('login.html')
+    
      
+
 if __name__ == '__main__':
-   app.run()
+   app.run(debug=True ,port=8000)

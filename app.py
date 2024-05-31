@@ -1,8 +1,19 @@
 # save this as app.py
 from flask import Flask,render_template,request
+from flask_mail import Mail, Message
 
 from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
+mail = Mail(app)
+
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USERNAME'] = 'jeemannu90@gmail.com'
+app.config['MAIL_PASSWORD'] = 'cqep qxtj ijoy oaew '
+app.config['MAIL_USE_TLS'] = False
+app.config['MAIL_USE_SSL'] = True
+mail.init_app(app)
+
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///project.db"
 db = SQLAlchemy(app)
 
@@ -25,18 +36,38 @@ class Crediantials(db.Model):
 
 
 
-@app.route("/", methods=['POST','GET'])
+@app.route("/", methods=['POST', 'GET'])
 def index():
     if request.method == "POST":
         names = request.form['names']
         emails = request.form['emails']
         subjects = request.form['subjects']
         msgs = request.form['msgs']
-        deatils = Details(name=names, email=emails,subject=subjects,msg=msgs)
-        db.session.add(deatils)
+        details = Details(name=names, email=emails, subject=subjects, msg=msgs)
+        db.session.add(details)
         db.session.commit()  # Commit the changes once
+
+        # Prepare the email message with the form details
+        email_body = f"""
+<html>
+    <body style="background: url('https://picsum.photos/1920/1080'); background-size: cover; color: white;">
+        <h1 style="color: #5e9ca0;">New Submission from Your Portfolio Site</h1>
+        <p><strong>Name:</strong> {names}</p>
+        <p><strong>Email:</strong> {emails}</p>
+        <p><strong>Subject:</strong> {subjects}</p>
+        <p><strong>Message:</strong></p>
+        <blockquote>{msgs}</blockquote>
+    </body>
+</html>
+"""
+        msg = Message('New Portfolio Submission',
+              sender='jeemannu90@gmail.com',
+              recipients=['mandeepkumarmannu123@gmail.com','mishramandeep@gmail.com'])
+        msg.html = email_body
+        mail.send(msg)
         return render_template('thankyou.html')
     return render_template('index.html')
+
 
 
 @app.route("/administrator",methods=['POST','GET'])

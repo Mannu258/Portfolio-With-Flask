@@ -43,9 +43,6 @@ def index():
         emails = request.form['emails']
         subjects = request.form['subjects']
         msgs = request.form['msgs']
-        details = Details(name=names, email=emails, subject=subjects, msg=msgs)
-        db.session.add(details)
-        db.session.commit()  # Commit the changes once
 
         # Prepare the email message with the form details
         email_body = f"""
@@ -65,6 +62,9 @@ def index():
               recipients=['mandeepkumarmannu123@gmail.com','mishramandeep@gmail.com'])
         msg.html = email_body
         mail.send(msg)
+        details = Details(name=names, email=emails, subject=subjects, msg=msgs)
+        db.session.add(details)
+        db.session.commit()  # Commit the changes once
         return render_template('thankyou.html')
     return render_template('index.html')
 

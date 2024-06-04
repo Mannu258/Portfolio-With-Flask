@@ -1,5 +1,5 @@
 # save this as app.py
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request ,send_from_directory
 from flask_mail import Mail, Message
 
 from flask_sqlalchemy import SQLAlchemy
@@ -16,6 +16,11 @@ mail.init_app(app)
 
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///project.db"
 db = SQLAlchemy(app)
+
+@app.route('/robots.txt')
+@app.route('/sitemap.xml')
+def static_from_root():
+    return send_from_directory(app.static_folder, request.path[1:])
 
 class Details(db.Model):
     ID = db.Column(db.Integer,primary_key=True)

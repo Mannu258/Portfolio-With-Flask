@@ -64,7 +64,7 @@ def index():
 """
         msg = Message('New Portfolio Submission',
               sender='jeemannu90@gmail.com',
-              recipients=['mandeepkumarmannu123@gmail.com','mishramandeep@gmail.com'])
+              recipients=['mandeepkumarmannu123@gmail.com','mishramandeep@outlook.com'])
         msg.html = email_body
         mail.send(msg)
         details = Details(name=names, email=emails, subject=subjects, msg=msgs)

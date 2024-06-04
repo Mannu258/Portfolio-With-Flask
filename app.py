@@ -24,6 +24,8 @@ class Details(db.Model):
     subject = db.Column(db.String(200),nullable=False)
     msg = db.Column(db.String(200),nullable=False)
 
+    def __repr__(self) -> str:
+        return f"{self.s_no} - {self.title}"
     
 class Crediantials(db.Model):
     ID = db.Column(db.Integer,primary_key=True)
@@ -81,17 +83,6 @@ def Admin():
             return render_template('login.html')
 
     return render_template('login.html')
-
-@app.route("/delete/<int:ID>/Mannu", methods=['GET','POST'])
-def delete(ID):
-    dele = Details.query.filter_by(ID=ID).first()
-    if dele:
-        db.session.delete(dele)
-        db.session.commit()
-        return "Delete operation successful"
-    else:
-        return "Item not found", 404
-
     
      
 

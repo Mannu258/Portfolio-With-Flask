@@ -2,77 +2,105 @@
 <html lang="en">
 
 <head>
-    <title>My Awesomecart</title>
-	<link rel="shortcut icon" type="image/icon" href="{{ url_for('static', filename='assets/logo/favicon.png') }}" />
+  <title>My Awesomecart</title>
+  <link rel="shortcut icon" type="image/icon" href="{{ url_for('static', filename='assets/logo/favicon.png') }}" />
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 </head>
 
 <body>
-    <main>
-        <div class="container my-5">
-            <h1 class="text-center mb-4">My Awesomecart</h1>
-        
-            <!-- Project Images -->
-            <div id="projectImages" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="https://picsum.photos/1920/1080" class="d-block w-100" alt="Project Image 1">
-                </div>
-                <div class="carousel-item">
-                  <img src="https://picsum.photos/1921/1081" class="d-block w-100" alt="Project Image 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://picsum.photos/1922/1082" class="d-block w-100" alt="Project Image 2">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://picsum.photos/1923/1083" class="d-block w-100" alt="Project Image 2">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://picsum.photos/1924/1084" class="d-block w-100" alt="Project Image 2">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://picsum.photos/1925/1085" class="d-block w-100" alt="Project Image 2">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://picsum.photos/1926/1086" class="d-block w-100" alt="Project Image 2">
-                  </div>
-                <!-- Add more images if needed -->
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#projectImages" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#projectImages" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-        
-            <!-- About the Project -->
-            <div class="my-5">
-              <h2>About the Project</h2>
-              <p>Write a brief description of your project here. Explain what it does, the technologies used, and any other relevant information.</p>
-            </div>
-        
-            <!-- How I Created This Project -->
-            <div class="my-5">
-              <h2>How I Created This Project</h2>
-              <p>Detail the steps you took to create this project. You can include challenges faced, learning outcomes, and any interesting tidbits you encountered along the way.</p>
-            </div>
+  <main>
+    <div class="container my-5">
+      <h1 class="text-center mb-4">My Project</h1>
+
+      <!-- Project Images -->
+      <div id="projectImages" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="{{ url_for('static', filename='projects/MAC/1.png') }}">
           </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{{ url_for('static', filename='projects/MAC/2.png') }}">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{{ url_for('static', filename='projects/MAC/3.png') }}">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{{ url_for('static', filename='projects/MAC/4.png') }}">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{{ url_for('static', filename='projects/MAC/5.png') }}">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{{ url_for('static', filename='projects/MAC/6.png') }}">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{{ url_for('static', filename='projects/MAC/7.png') }}">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{{ url_for('static', filename='projects/MAC/8.png') }}">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#projectImages" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#projectImages" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
+      <!-- About the Project -->
+      <section class="container mt-5">
+        <header>
+          <h1 class="text-center">My Awesomecart Project Overview</h1>
+        </header>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+        <article>
+          <h2>Project Name</h2>
+          <p>My Awesomecart</p>
+
+          <h2>Project Description</h2>
+          <p>My Awesomecart is an innovative e-commerce platform designed to provide a seamless shopping experience. As
+            a solo developer, I built this application to showcase my skills in full-stack web development.</p>
+
+          <h2>Technologies & Tools Used</h2>
+          <p>
+            Python, Django, HTML, CSS,JavaScript, Bootstrap, jQuery, Git, GitHub
+          </p>
+
+          <h2>Features</h2>
+          <ul>
+            <li>User-friendly interface with intuitive navigation.</li>
+            <li>Secure user authentication and authorization.</li>
+            <li>Real-time product search and filter capabilities.</li>
+            <li>Efficient cart and checkout process with multiple payment options.</li>
+            <li>Responsive design for optimal viewing on all devices.</li>
+          </ul>
+
+          <h2>Challenges Faced</h2>
+          <p>I encountered and overcame several challenges, such as optimizing database queries for performance,
+            implementing a responsive design that adapts to various screen sizes, and integrating a robust mail service.
+            Moreover, adding real-time OTP verification was a complex yet vital part of enhancing the application’s
+            security.</p>
+
+          <h2>Outcome</h2>
+          <p>The project was successfully deployed and received positive feedback for its performance and user-centric
+            design, demonstrating my ability to create robust and scalable web applications.</p>
+        </article>
+      </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

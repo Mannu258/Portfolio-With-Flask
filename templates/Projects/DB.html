@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>DB Mojopanda</title>
+  <link rel="shortcut icon" type="image/icon" href="{{ url_for('static', filename='assets/logo/favicon.png') }}" />
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+  <main>
+    <div class="container my-5">
+      <h1 class="text-center mb-4">My Project</h1>
+
+      <!-- Project Images -->
+      <div id="projectImages" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="{{ url_for('static', filename='projects/DB/1.png') }}">
+
+
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{{ url_for('static', filename='projects/DB/2.png') }}">
+
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{{ url_for('static', filename='projects/DB/3.png') }}">
+
+          </div>
+
+          <!-- Add more images if needed -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#projectImages" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#projectImages" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <div class="my-5">
+        <section class="bg-light p-5">
+          <div class="container">
+            <h2 class="text-center mb-4">About DB Mojopanda</h2>
+            <p class="text-center lead">Their system is robust, efficient, and easy to use. It has
+              significantly improved our data organization and accessibility, enabling us to
+              make more data-driven decisions.</p>
+            <div class="text-center mt-4">
+              <a href="https://www.dbmojopanda.com" target="_blank" class="btn btn-primary">Explore website</a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="container mt-5">
+        <header>
+          <h1 class="text-center">DB Mojopanda Project Overview</h1>
+        </header>
+
+        <article>
+          <h2>Project Name</h2>
+          <p>DB Mojopanda</p>
+
+          <h2>My Role</h2>
+          <p>Lead Developer</p>
+
+          <h2>Technologies Used</h2>
+          <p>
+            Python, Django,SQlite3, HTML, CSS,JavaScript, Bootstrap, jQuery, Git, GitHub
+          </p>
+
+          <h2>Project Description</h2>
+          <p>DB Mojopanda is a dynamic and user-friendly database website tailored for efficient product exploration and
+            seamless data retrieval. Whether you’re a customer, supplier, or internal team member, DB Mojopanda
+            simplifies the process of finding relevant information, making informed decisions, and optimizing business
+            operations.</p>
+
+          <h2>Development Process</h2>
+          <ul>
+            <li><strong>Backend</strong>: Developed with Django, I implemented robust data models to handle Product
+              information</li>
+            <li><strong>Frontend</strong>: Leveraged Bootstrap for responsive design, crafted an intuitive layout with
+              HTML and CSS, and enhanced interactivity with jQuery.</li>
+            <li><strong>Challenges</strong>: OOne of the primary hurdles I encountered was integrating a real-time
+              search system. To address this, I devised a custom scheduling algorithm that efficiently allocated
+              resources. Additionally, I faced challenges while merging data into the database due to discrepancies in
+              column names.</li>
+          </ul>
+
+          <h2>Outcome</h2>
+          <p>The project was a success, resulting in a user-friendly platform that significantly enhances the efficiency
+            of finding items</p>
+
+          <h2>Reflection</h2>
+          <p>This project honed my full-stack development skills and taught me the importance of user-centered design in
+            creating effective web solutions.</p>
+        </article>
+      </section>
+
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

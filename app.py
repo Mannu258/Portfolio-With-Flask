@@ -79,7 +79,7 @@ def projects(name):
     if name == "OG":
         return render_template('Projects/OG.html')
     elif name == "DB":
-        return render_template('Projects/MG.html')
+        return render_template('Projects/DB.html')
     elif name == "MAC":
         return render_template('Projects/MAC.html')
     

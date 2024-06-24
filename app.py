@@ -102,6 +102,40 @@ def Admin():
             return render_template('login.html')
 
     return render_template('login.html')
+
+
+@app.route("/profile-mis", methods=['POST', 'GET'])
+def MIS():
+    if request.method == "POST":
+        names = request.form['names']
+        emails = request.form['emails']
+        subjects = "MIS Portfolio Submission: " + request.form.get('subjects', 'No Subject')
+        msgs = request.form['msgs']
+
+        # Prepare the email message with the form details
+        email_body = f"""
+<html>
+    <body style="background: url('https://picsum.photos/1920/1080'); background-size: cover; color: white;">
+        <h1 style="color: #5e9ca0;">{subjects}</h1>
+        <p><strong>Name:</strong> {names}</p>
+        <p><strong>Email:</strong> {emails}</p>
+        <p><strong>Subject:</strong> {subjects}</p>
+        <p><strong>Message:</strong></p>
+        <blockquote>{msgs}</blockquote>
+    </body>
+</html>
+"""
+        msg = Message(subjects,
+              sender='jeemannu90@gmail.com',
+              recipients=['mandeepkumarmannu123@gmail.com','mishramandeep@outlook.com'])
+        msg.html = email_body
+        mail.send(msg)
+        details = Details(name=names, email=emails, subject=subjects, msg=msgs)
+        db.session.add(details)
+        db.session.commit()  # Commit the changes once
+        return render_template('thankyou.html')
+    return render_template('MIS.html')
+
     
      
 

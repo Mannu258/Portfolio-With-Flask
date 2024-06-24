@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mandeep Mishra's Portfolio</title>
+	<link rel="shortcut icon" type="image/icon" href="{{ url_for('static', filename='assets/logo/favicon.png') }}" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
@@ -41,7 +42,7 @@
                 <h1 class="card-title">Mandeep Mishra</h1>
                 <h2 class="card-subtitle mb-2 text-muted">MIS Executive at Mojopanda Pvt Ltd</h2>
                 <p class="card-text">Results-driven professional with a strong background in data management and Excel proficiency. Committed to accuracy, process optimization, and team collaboration.</p>
-                <a href="#" class="btn btn-primary">Download Resume</a>
+                <a href="{{ url_for('static', filename='assets/download/MIS/Mandeep_CV.pdf') }}" class="btn btn-primary">Download Resume</a>
             </div>
         </div>
 
@@ -113,6 +114,7 @@
                 </ul>
             </div>
         </div>
+        <form action="/profile-mis" method="post">
 
         <div class="card">
             <div class="card-header section-title">
@@ -122,21 +124,22 @@
                 <form>
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" name="names" placeholder="Enter your name">
+                        <input type="text" class="form-control" id="name" name="names" placeholder="Enter your name" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" name="emails" placeholder="Enter your email">
+                        <input type="email" class="form-control" id="email" name="emails" placeholder="Enter your email" required>
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea class="form-control" id="message" name="msgs" rows="3"></textarea>
+                        <textarea class="form-control" id="message" name="msgs" rows="3" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
     </div>
+</form>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.7/dist/umd/popper.min.js"></script>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Database</title>
+    <title>Admin Center</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -64,7 +64,45 @@
 
     <main>
         <div class="container text-center">
-            <!-- Your card and table -->
+          <main>
+            <div class="container text-center">
+                <div class="card">
+                    <div class="card-header">
+                      User Details
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-striped table-hover table-bordered align-middle">
+                        <caption>List of users</caption>
+                        <thead class="table-dark">
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Subject</th>
+                            <th scope="col">Message</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {% for details in details %}
+                          <tr class="table-primary">
+                            <th scope="row">{{ loop.index }}</th>
+                            <td>{{ details.name }}</td>
+                            <td>{{ details.email }}</td>
+                            <td>{{ details.subject }}</td>
+                            <td>{{ details.msg }}</td>
+                          </tr>
+                          {% endfor %}
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="card-footer text-muted">
+                      User data updated regularly
+                    </div>
+                  </div>
+                  
+                  
+            </div>
+        </main>
         </div>
     </main>
 

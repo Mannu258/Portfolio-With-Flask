@@ -82,6 +82,8 @@ def projects(name):
         return render_template('Projects/DB.html')
     elif name == "MAC":
         return render_template('Projects/MAC.html')
+    elif name == "CM":
+        return render_template('Projects/CM.html')
     
     return "404 Not Found"
 

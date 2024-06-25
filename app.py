@@ -1,8 +1,6 @@
 # save this as app.py
 from flask import Flask,render_template,request ,send_from_directory
 from flask_mail import Mail, Message
-from emaily import *
-from flask_mail import Message, Mail
 from threading import Thread
 from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)

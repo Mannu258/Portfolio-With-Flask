@@ -12,8 +12,6 @@ app.config['MAIL_PASSWORD'] = 'cqep qxtj ijoy oaew'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
-mail.init_app(app)
-
 def send_async_email(app, msg):
     with app.app_context():
         mail.send(msg)

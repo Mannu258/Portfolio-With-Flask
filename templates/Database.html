@@ -80,6 +80,7 @@
                             <th scope="col">Email</th>
                             <th scope="col">Subject</th>
                             <th scope="col">Message</th>
+                            <th scope="col">Action</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -90,6 +91,7 @@
                             <td>{{ details.email }}</td>
                             <td>{{ details.subject }}</td>
                             <td>{{ details.msg }}</td>
+                            <td><a class="btn btn-danger" href="{{ url_for('delete', ID=details.ID) }}">Delete Item</a></td>
                           </tr>
                           {% endfor %}
                         </tbody>

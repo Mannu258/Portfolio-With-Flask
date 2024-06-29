@@ -3,6 +3,7 @@ from flask import Flask,render_template,request ,send_from_directory
 from flask_mail import Mail, Message
 from threading import Thread
 from flask_sqlalchemy import SQLAlchemy
+from flask import jsonify
 app = Flask(__name__)
 mail = Mail(app)
 
@@ -326,8 +327,14 @@ def MIS():
         return render_template('thankyou.html')
     return render_template('MIS.html')
 
-    
-     
+@app.route("/delete/<int:ID>", methods=['POST', 'GET'])
+def delete(ID):
+    query = Details.query.get(ID)
+    if query:
+        db.session.delete(query)
+        db.session.commit()
+        return jsonify({"message": f"Item with ID {ID} deleted successfully"})
+   
 
 if __name__ == '__main__':
-   app.run(debug=False ,port=8000)
+   app.run(debug=True ,port=8000)

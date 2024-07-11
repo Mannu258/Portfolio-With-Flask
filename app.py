@@ -305,7 +305,7 @@ def Admin():
         password = request.form['password']
         admi = Crediantials.query.filter_by(username=username,password=password).first()
         if admi:
-            details = Details.order_by(Details.ID.desc()).all()
+            details = Details.query.all()
             return render_template('Database.html',details=details)
         else:
             return render_template('login.html')

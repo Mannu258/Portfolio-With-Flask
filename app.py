@@ -263,6 +263,10 @@ class Crediantials(db.Model):
     def __repr__(self) -> str:
         return f"{self.username}"
 
+@app.errorhandler(404)
+def page_not_found(e):
+    # Your custom logic here (logging, notifications, etc.)
+    return render_template('404.html'), 404
 
 
 @app.route("/", methods=['POST', 'GET'])

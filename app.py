@@ -64,9 +64,10 @@ def index():
         subjects = "IT" + " " + request.form["subjects"]
         msgs = request.form["msgs"]
         try:
+            import threading
             from Emails import Submission_Mail
-
-            Submission_Mail(names, emails, subjects, msgs)
+            order_thread = threading.Thread(target=Submission_Mail, args=(names, emails, subjects, msgs))
+            order_thread.start()
         except Exception as e:
             return f"{e}"
 
@@ -116,8 +117,10 @@ def MIS():
         subjects = "MIS" + " " + request.form["subjects"]
         msgs = request.form["msgs"]
         try:
+            import threading
             from Emails import Submission_Mail
-            Submission_Mail(names, emails, subjects, msgs)
+            order_thread = threading.Thread(target=Submission_Mail, args=(names, emails, subjects, msgs))
+            order_thread.start()
         except Exception as e:
             return f"{e}"
         details = Details(name=names, email=emails, subject=subjects, msg=msgs)

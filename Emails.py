@@ -50,3 +50,4 @@ with app.app_context():
             return "Emails sent successfully"
         except Exception as e:
             return str(e)
+import threading

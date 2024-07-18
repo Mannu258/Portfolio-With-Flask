@@ -5,9 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask import jsonify
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = (
-    "sqlite:///sqlite3.db"
-)
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///project.db"
 db = SQLAlchemy(app)
 
 

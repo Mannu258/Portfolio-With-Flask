@@ -66,8 +66,7 @@ def index():
         try:
             import threading
             from Emails import Submission_Mail
-            order_thread = threading.Thread(target=Submission_Mail, args=(names, emails, subjects, msgs))
-            order_thread.start()
+            Submission_Mail(names, emails, subjects, msgs)
         except Exception as e:
             return f"{e}"
 
@@ -117,10 +116,8 @@ def MIS():
         subjects = "MIS" + " " + request.form["subjects"]
         msgs = request.form["msgs"]
         try:
-            import threading
             from Emails import Submission_Mail
-            order_thread = threading.Thread(target=Submission_Mail, args=(names, emails, subjects, msgs))
-            order_thread.start()
+            Submission_Mail(names, emails, subjects, msgs)
         except Exception as e:
             return f"{e}"
         details = Details(name=names, email=emails, subject=subjects, msg=msgs)
@@ -128,7 +125,6 @@ def MIS():
         db.session.commit()
         return render_template("thankyou.html")
     return render_template("MIS.html")
-
 
 @app.route("/delete/<int:ID>", methods=["POST", "GET"])
 def delete(ID):

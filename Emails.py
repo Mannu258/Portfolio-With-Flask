@@ -4,7 +4,6 @@ with app.app_context():
 
     def Submission_Mail(names, emails, subjects, msgs):
         try:
-            # Notify yourself (portfolio owner)
             msg = Message(
                 subject="New Portfolio Submission",
                 sender="jeemannu90@gmail.com",
@@ -15,7 +14,6 @@ with app.app_context():
             )
             msg.body = f"""
                 Hello Mandeep,
-
                 You have a new submission from your portfolio site:
                 Name: {names}
                 Email: {emails}
@@ -36,18 +34,14 @@ with app.app_context():
             )
             autoreply.body = f"""
                 Hello {names},
-
                 We have received your message and appreciate you reaching out to us. One of our team members will review your submission and get back to you shortly.
-
                 This is an automated message. Please do not reply directly to this email.
-
                 Best regards,
                 Mandeep Mishra
                 9386090900
             """
             mail.send(autoreply)
-
             return "Emails sent successfully"
         except Exception as e:
             return str(e)
-import threading
+

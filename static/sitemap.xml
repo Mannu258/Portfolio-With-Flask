@@ -1,33 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-        <loc>https://www.mandeep-developer.site/</loc>
-    </url>
-    <url>
-        <loc>https://www.mandeep-developer.site/#contact</loc>
-    </url>
-    <url>
-        <loc>https://www.mandeep-developer.site/#skills</loc>
-    </url>
-    <url>
-        <loc>https://www.mandeep-developer.site/#education</loc>
-    </url>
-    <url>
-        <loc>https://www.mandeep-developer.site/#portfolio</loc>
-    </url>
-    <url>
-        <loc>https://www.mandeep-developer.site/#profiles</loc>
-    </url>
-    <url>
-        <loc>https://www.mandeep-developer.site/static/assets/download/MANDEEP_CV.pdf</loc>
-    </url>
-
-
+<loc>https://www.mandeep-developer.site/</loc>
+<lastmod>2024-08-05T06:24:20+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://www.mandeep-developer.site/static/assets/download/MANDEEP_CV.pdf</loc>
+<lastmod>2024-07-02T07:06:58+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.mandeep-developer.site/#contact</loc>
+<lastmod>2024-08-05T06:24:20+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.mandeep-developer.site/#skills</loc>
+<lastmod>2024-08-05T06:24:20+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.mandeep-developer.site/#education</loc>
+<lastmod>2024-08-05T06:24:20+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.mandeep-developer.site/#portfolio</loc>
+<lastmod>2024-08-05T06:24:20+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.mandeep-developer.site/#profiles</loc>
+<lastmod>2024-07-02T07:06:58+00:00</lastmod>
+<priority>0.80</priority>
+</url>
 </urlset>

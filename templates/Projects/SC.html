@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Speech care</title>
+    <link rel="shortcut icon" type="image/icon" href="{{ url_for('static', filename='assets/logo/favicon.png') }}" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <main>
+        <div class="container my-5">
+            <div class="d-flex justify-content-center">
+                <a href="/" class="btn btn-primary">Home</a>
+            </div>
+            <h1 class="text-center mb-4">My Project</h1>
+
+            <!-- Project Images -->
+            <div id="projectImages" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="{{ url_for('static', filename='projects/SC/1.png') }}">
+
+
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ url_for('static', filename='projects/SC/2.png') }}">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ url_for('static', filename='projects/SC/3.png') }}">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ url_for('static', filename='projects/SC/4.png') }}">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ url_for('static', filename='projects/SC/5.png') }}">
+
+                    </div>
+
+                    <!-- Add more images if needed -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectImages"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectImages"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+            <div class="my-5">
+                <section class="bg-light p-5">
+                    <div class="container">
+                        <h2 class="text-center mb-4">About Speech care</h2>
+                        <p class="text-center lead">I developed Speech Care, a dynamic website that provides services
+                            for individuals who struggle with fluent speech. Our application aims to help those who face
+                            speech difficulties, offering guidance and support to improve their communication skills.
+                        </p>
+                        <div class="text-center mt-4">
+                            <a href="https://www.speechcare.in" target="_blank" class="btn btn-primary">Explore
+                                website</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="container mt-5">
+                <header>
+                    <h1 class="text-center">Speech care Overview</h1>
+                </header>
+
+                <article>
+                    <h2>Project Name</h2>
+                    <p>Speech care</p>
+
+                    <h2>My Role</h2>
+                    <p>Lead Developer</p>
+
+                    <h2>Technologies Used</h2>
+                    <p>
+                        Python, Flask,SQlite3, HTML, CSS,JavaScript, Bootstrap, jQuery, Git, GitHub
+                    </p>
+
+                    <h2>Project Description</h2>
+                    <p>**Speech Care**: A dynamic web application built using Flask—a powerful Python web framework. Our
+                        platform assists individuals who struggle with fluent speech, providing personalized guidance
+                        and helping users improve their communication skills and build confidence.</p>
+
+
+                    <h2>Development Process</h2>
+                    <ul>
+                        <li><strong>Backend</strong>: Utilizing Flask, I crafted efficient data models to manage diverse
+                            administrative records and public communications.</li>
+                        <li><strong>Frontend</strong>: Employed Bootstrap for a responsive interface, structured the
+                            layout with HTML and CSS, and implemented interactive features using JavaScript and jQuery.
+                        </li>
+                        <li><strong>Challenges</strong>: Overcoming technical hurdles was essential. One significant
+                            challenge involved creating an intuitive content management system. I tackled this by
+                            developing a custom solution that streamlined content updates and management. Additionally,
+                            ensuring data consistency across various sections of the website posed another obstacle. To
+                            address this, I meticulously designed and tested the database, ensuring reliable results.
+                        </li>
+                        <li><strong>Real-Time Automation</strong>: To enhance user convenience, we've implemented an
+                            automated scoring system. When users fill out forms, the platform instantly calculates their
+                            scores and delivers the results via email. This real-time feedback empowers users on their
+                            speech improvement journey.</li>
+                    </ul>
+
+                    <h2>Outcome</h2>
+                    <p>The project culminated in a highly accessible platform—**Speech Care**—that effectively
+                        communicates the chairperson's vision and facilitates community involvement. Users can now
+                        access valuable speech therapy services seamlessly.</p>
+
+                    <h2>Reflection</h2>
+                    <p>This project significantly refined my skills in full-stack development. It also underscored the
+                        immense value of clear communication and user-friendly design in public service websites.
+                        Knowing that our work directly impacts individuals striving to improve their speech and
+                        confidence is incredibly rewarding.</p>
+            </section>
+
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -87,8 +87,10 @@ def projects(name):
         return render_template("Projects/MAC.html")
     elif name == "CM":
         return render_template("Projects/CM.html")
+    elif name == 'SC':
+        return render_template("Projects/SC.html")
 
-    return "404 Not Found"
+    return page_not_found(name)
 
 
 @app.route("/administrator", methods=["POST", "GET"])

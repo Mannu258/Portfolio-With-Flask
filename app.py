@@ -1,5 +1,5 @@
 # save this as app.py
-from flask import Flask, render_template, request, send_from_directory
+from flask import Flask, render_template, request, send_from_directory,Response
 from flask_mail import Mail, Message
 from flask_sqlalchemy import SQLAlchemy
 from flask import jsonify
@@ -135,6 +135,91 @@ def delete(ID):
         db.session.delete(query)
         db.session.commit()
         return jsonify({"message": f"Item with ID {ID} deleted successfully"})
+    
+    
+@app.route("/qr-code-generator", methods=["GET", "POST"])
+def qr_code_maker():
+    if request.method == "POST":
+        link = request.form.get("link")
+        name = request.form.get("filename")
+
+        if link:
+            import qrcode
+            from io import BytesIO
+            from PIL import Image
+            from ftplib import FTP
+
+            try:
+                # Generate QR code
+                qr = qrcode.make(link)
+                img_io = BytesIO()
+                qr.save(img_io, format="PNG")
+                img_io.seek(0)
+                filename = f"{name}.png" if name else "qr_code.png"
+
+                # Save QR code to a unique local file
+                unique_filename = filename
+                counter = 1
+                import os
+                while os.path.exists(unique_filename):
+                    unique_filename = filename.replace(".png", f"_{counter}.png")
+                    counter += 1
+
+                with open(unique_filename, "wb") as f:
+                    f.write(img_io.read())
+                img_io.seek(0)  # Reset the BytesIO stream for the Response
+
+                # FTP upload
+                ftp = FTP("145.223.17.225")
+                ftp.login("u172164904", "Mannu$123")
+                ftp.cwd("domains/speechcare.in/Python/QR")
+
+                # Create folder with today's date
+                from datetime import datetime
+
+                today_date = datetime.now().strftime("%Y-%m-%d")
+                if today_date not in ftp.nlst():
+                    ftp.mkd(today_date)
+
+                ftp.cwd(today_date)
+
+                # Check if file with the same name exists on FTP server
+                file_exists = True
+                ftp_unique_filename = unique_filename
+                while file_exists:
+                    try:
+                        ftp.size(ftp_unique_filename)
+                        # File exists, add a character to the filename
+                        ftp_unique_filename = ftp_unique_filename.replace(
+                            ".png", "a.png"
+                        )
+                    except:
+                        # File does not exist
+                        file_exists = False
+
+                # Upload the file with the unique filename
+                with open(unique_filename, "rb") as f:
+                    ftp.storbinary(f"STOR {ftp_unique_filename}", f)
+                ftp.quit()
+
+                # Remove local file after upload
+                os.remove(unique_filename)
+
+                # Return the file for download
+                return Response(
+                    img_io.read(),
+                    mimetype="image/png",
+                    headers={
+                        "Content-Disposition": f"attachment;filename={ftp_unique_filename}"
+                    },
+                )
+
+            except Exception as e:
+                return f"Error generating or uploading QR code: {str(e)}"
+        else:
+            return "Please enter a URL or text to generate a QR code."
+
+    return render_template("QR.html")
 
 
 if __name__ == "__main__":
